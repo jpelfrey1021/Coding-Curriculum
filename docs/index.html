@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+                <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.foxnews.com">News</a></li>
+                <li><a href="https://weather.com">Weather</a></li>
+            </ul>
+        </div>
+        <div class="topnav"> 
+                <a href="#">One</a>
+                <a href="#">Two</a>
+                <a href="#">Three</a>
+                <a href="#">Four</a>
+                <div class="dropdown"> 
+                <button class="dropbtn" onclick="myFunction()"> Five
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <p class="colors">Colors of The Rainbow:</p>
+            <ul>
+                <li class="red">Red</li>
+                <li class="orange">Orange</li>
+                <li class="yellow">Yellow</li>
+                <li class="green">Green</li>
+                <li class="blue"> Blue</li>
+                <li class="indigo">Indigo</li>
+                <li class="violet">Violet</li>
+            </ul>
+            <h1>My Heading</h1>
+            <h2>My subheading 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+            <h3>My subheading 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <form action="#" method="GET" name="my_form">
+                <fieldset>
+                    <p class="info">Important Information:</p>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name"> 
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name"><br><br>
+                    <label for="Male">Choose Gender: </label>
+                    <input type="radio" name="gender" value="Male" id="Male">Male
+                    <input type="radio" name="gender" value="Female" id="Female">Female<br>
+                    <p class="toppings">Choose Your Favorite Pizza Toppings</p>
+                    <input type="checkbox" name="Toppings" Value="Pineapple" id="Pineapple">Pineapple
+                    <input type="checkbox" name="Toppings" Value="Mushroom" id="Mushroom">Mushroom
+                    <input type="checkbox" name="Toppings" Value="Pepperoni" id="Pepperoni">Pepperoni
+                    <input type="checkbox" name="Toppings" Value="Red-Peppers" id="Red=Peppers">Red Peppers
+                    <input type="checkbox" name="Toppings" Value="Banana-Peppers" id="Banana-Peppers">Banana Peppers
+                    <p class="sports"> Select a Sport:</p>
+                    <select>
+                        <option>Football</option>
+                        <option>Basketball</option>
+                        <option>Baseball</option>
+                        <option>Soccer</option>
+                        <option>Hockey</option>
+                    </select><br>
+                </fieldset>
+                <p class="textbox">Enter Names Separated by Commas</p>
+                <textarea type="text" id="myText" value="some text..."></textarea><br><br>
+                <button class="btnSave" onclick="getNames()"> Save</button>
+                <div id="list"></div>
+            </form>
+        </div>
+        <footer>
+            <p>&copy;2019 My Page All Rights Reserved</p>
+            <a href="https://www.instagram.com">instagram<span></span></a></li>
+            <a href="https://in.pinterest.com">pinterest<span></span></a></li>
+            <a href="https://youtube.com">youtube<span></span></a></li>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

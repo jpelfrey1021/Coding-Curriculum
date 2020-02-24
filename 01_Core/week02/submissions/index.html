@@ -1,86 +1,160 @@
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="sidebar">
-                <ul>
-                <li><a href="https://www.google.com">Google</a></li>
-                <li><a href="https://www.foxnews.com">News</a></li>
-                <li><a href="https://weather.com">Weather</a></li>
-            </ul>
-        </div>
-        <div class="topnav"> 
-                <a href="#">One</a>
-                <a href="#">Two</a>
-                <a href="#">Three</a>
-                <a href="#">Four</a>
-                <div class="dropdown"> 
-                <button class="dropbtn" onclick="myFunction()"> Five
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                </div>
-            </div>
-        </div>
-        <div class="main-content">
-            <p class="colors">Colors of The Rainbow:</p>
-            <ul>
-                <li class="red">Red</li>
-                <li class="orange">Orange</li>
-                <li class="yellow">Yellow</li>
-                <li class="green">Green</li>
-                <li class="blue"> Blue</li>
-                <li class="indigo">Indigo</li>
-                <li class="violet">Violet</li>
-            </ul>
-            <h1>My Heading</h1>
-            <h2>My subheading 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-            <h3>My subheading 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <form action="#" method="GET" name="my_form">
-                <fieldset>
-                    <p class="info">Important Information:</p>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name"> 
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name"><br><br>
-                    <label for="Male">Choose Gender: </label>
-                    <input type="radio" name="gender" value="Male" id="Male">Male
-                    <input type="radio" name="gender" value="Female" id="Female">Female<br>
-                    <p class="toppings">Choose Your Favorite Pizza Toppings</p>
-                    <input type="checkbox" name="Toppings" Value="Pineapple" id="Pineapple">Pineapple
-                    <input type="checkbox" name="Toppings" Value="Mushroom" id="Mushroom">Mushroom
-                    <input type="checkbox" name="Toppings" Value="Pepperoni" id="Pepperoni">Pepperoni
-                    <input type="checkbox" name="Toppings" Value="Red-Peppers" id="Red=Peppers">Red Peppers
-                    <input type="checkbox" name="Toppings" Value="Banana-Peppers" id="Banana-Peppers">Banana Peppers
-                    <p class="sports"> Select a Sport:</p>
-                    <select>
-                        <option>Football</option>
-                        <option>Basketball</option>
-                        <option>Baseball</option>
-                        <option>Soccer</option>
-                        <option>Hockey</option>
-                    </select><br>
-                </fieldset>
-                <p class="textbox">Enter Names Separated by Commas</p>
-                <textarea type="text" id="myText" value="some text..."></textarea><br><br>
-                <button class="btnSave" onclick="getNames()"> Save</button>
-                <div id="list"></div>
-            </form>
-        </div>
-        <footer>
-            <p>&copy;2019 My Page All Rights Reserved.</p>
-            <a href="https://www.instagram.com">instagram<span></span></a></li>
-            <a href="https://in.pinterest.com">pinterest<span></span></a></li>
-            <a href="https://youtube.com">youtube<span></span></a></li>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+<!doctype html>
+
+<html>
+<head>
+	<title>All About Colors</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<div id="all">
+		<div id="header">
+			<header>
+				<h1>All About Colors</h1>
+				<p>Colors allow us to see the world in a beautiful way.</p>
+			</header>
+
+		</div><!--end header-->
+
+		<div id="main-nav">
+			<a href="index.html">Home</a>
+			<a href="members.html">About Us</a>
+			<a href="">Activities</a>
+			<a href="">Blog</a>
+			<div id="dropdown">
+				<p id="dropbtn">Our Partners</p>
+				<div id="drop-content">
+					<a href="https://allaboutsports.org/">All About Sports</a>
+					<a href="http://www.pizzafacts.net/">All About Pizza</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="sidebar-nav">
+			<h4>More about Colors:</h4>
+
+				<h5>Design Seeds - for all who color</h5>
+				<p>As Seeds has grown over the years, it has evolved into an international community who share a passion for nature’s beauty, wanderlust, & discovering inspiration in unexpected captures. By creating color palettes inspired by images submitted via Instagram, I am grateful to collaborate with diverse global talent including artists, makers, designers, and photographers.</p>
+				<a href="https://www.design-seeds.com/">Visit the blog</a>
+
+				<h5>Color Matters</h5>
+				<p>Color is always doing something. Sometimes color screams out a message, sometimes it casts a subliminal spell. So, what's happening in the world of color today? Yesterday? Tomorrow? What are the facts, what are the myths?</p>
+				<a href="https://www.colormatters.com/color-matters-blog">Visit the blog</a>
+
+			<br>
+
+			<h4>Colors in the news:</h4>
+				
+				<h5>Another Year of Blue</h5>
+				<p>For the 21st consecutive year, Pantone has named a color of the year, a trend-forecasting stunt as closely watched by the news media as it is by the industries — marketing, fashion, design — that actually traffic in visual trends.</p>
+				<p>The blue of 2020 is Classic Blue, a darker, more familiar shade than its cyanic siblings. </p>
+				<a href="https://www.nytimes.com/2019/12/04/style/pantone-color-2020-classic-blue.html">Read more</a>
+
+				<h5>Make Color Matching Easy Wherever you go</h5>
+				<p>This pocket-sized device has earned rave reviews from the likes of CNET and Mashable for its ingenuity and convenience. Whether you're an artist who sees inspiration everywhere or a corporate decision-maker who values presentation, you'll find the Nix is incredibly handy for bringing the color you see every day into your professional life. </p>
+				<a href="https://www.entrepreneur.com/article/343498">Read more</a>
+		</div>
+	
+		<div id="main-content">
+			<h2 id="heading-one-main">What are colors?</h2>
+				<p>Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.</p>
+
+				<p>To see color, you have to have light. When light shines on an object some colors bounce off the object and others are absorbed by it. Our eyes only see the colors that are bounced off or reflected.</p>
+
+				<p>The sun’s rays contain all the colors of the rainbow mixed together. This mixture is known as white light. When white light strikes a white crayon or marker barrel, it appears white to us because it absorbs no color and reflects all color equally. A black crayon or marker cap absorbs all colors equally and reflects none, so it looks black to us. While artists consider black a color, scientists do not because black is the absence of all color.</p>
+
+			<h2>What are the colors of the rainbow?</h2>
+				<ul id="rainbow">
+					<li id="red">red</li>
+					<li id="orange">orange</li>
+					<li id="yellow">yellow</li>
+					<li id="green">green</li>
+					<li id="blue">blue</li>
+					<li id="indigo">indigo</li>
+					<li id="violet">violet</li>
+				</ul>
+	
+			<div id="form">
+				<h3>Contact us to learn more about colors:</h3>
+				<p>Fill out all the fields below so we can send you tailored content from us and our partners!</p><br>
+				<form id="contact-form" method="get">
+					<fieldset id=form-fieldset>
+						<legend>Contact Us</legend>
+
+					<label for="first-name">First Name:</label><br>
+					<input type="text" id="first-name" name="first-name"><br>
+					<label for="last-name">Last Name:</label><br>
+					<input type="text" id="last-name" name="last-name">
+
+					<br><br>
+
+					<label for="gender">Gender:</label><br>
+  					<input type="radio" id="male" name="gender">
+  					<label for="male">Male</label><br>
+  					<input type="radio" id="female" name="gender">
+  					<label for="female">Female</label><br>
+  					<input type="radio" id="other" name="gender">
+  					<label for="other">Other</label><br>
+  					<input type="radio" id="no-answer" name="gender">
+  					<label for="no-answer">Prefer not to Answer</label>
+
+  					<br><br>
+
+					<label for="sports">Choose a Favorite Sport:</label><br>
+					<select id="sports" name="sports">
+  						<option value="Soccer">Soccer</option>
+  						<option value="Football">Football</option>
+  						<option value="Basketball">Basketball</option>
+  						<option value="Tennis">Tennis</option>
+  						<option value="Golf">Golf</option>
+  						<option value="Volleyball">Volleyball</option>
+					</select>
+			
+					<br><br>
+
+					<label for="pizza">Favorite Pizza Toppings:</label><br>
+  					<input type="checkbox" id="cheese">
+  					<label for="cheese">Cheese</label><br>
+  					<input type="checkbox" id="pepperoni">
+  					<label for="pepperoni">Pepperoni</label><br>
+  					<input type="checkbox" id="bacon">
+  					<label for="bacon">Bacon</label><br>
+  					<input type="checkbox" id="Pineapple">
+  					<label for="Pineapple">Pineapple</label><br>
+  					<input type="checkbox" id="Onions">
+  					<label for="Onions">Onions</label>
+
+  					<br><br>
+
+  					<input type="submit" value="Save" onclick="saveName()">
+  				</fieldset>
+				</form>
+			</div><!--end form-->
+		</div><!--end main-content-->
+		
+		<div id="footer">
+			<footer>
+				<p id="copyright">&copy;2020 Jessica</p>
+
+				<br>
+
+				<img src="images/facebook_logo.png" class="logo">
+				<a href='https://www.facebook.com/crayola/' class='sm'>Facebook</a>
+
+				<br>
+
+				<img src="images/insta_logo.jpg" class="logo">
+				<a href='https://www.instagram.com/crayola/?hl=en' class='sm'>Instagram</a>
+
+				<br>
+				<img src="images/twitter_logo.png" class="logo">
+				<a href='https://twitter.com/Crayola?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor' class='sm'>Twitter</a>
+			</footer>
+		</div> <!--end footer-->
+	</div><!--end all-->
+
+	<script src="script.js"></script>
+
+</body>
+
 </html>

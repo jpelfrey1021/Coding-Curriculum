@@ -1,7 +1,3 @@
-/*
-Make the last names bold and red using CSS (NOT inline styles).
-*/
-
 
 
 var customers = ["Sarah Smith","Mark Paul","Charles Marks","Sarah New","Michael Martin","Lori Lane"];
@@ -30,15 +26,3 @@ window.onload = function() {
     init();
 }
 }
-
-
-/*
-// create a alphabetically-sorted list by last name.
-function getNames(){
-    var names = document.getElementById("myText").value; //points to the value of the textArea.
-    var namesArr = names.split(',');   //Splits the names with a comma 
-    var sortedNames = namesArr.sort(); //sorts the names in acending order
-    var fullHTML = sortedNames.join(' ') // joins  the names with a space
-    document.getElementById("list").innerHTML = fullHTML;   //replaces the content in the empty div with the new array of names.
-}
-*/

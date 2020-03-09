@@ -10,7 +10,107 @@
 
   <style>
 
-	}
+/*blue background*/
+    .container {
+  		height: 220px;
+  		width: 220px;
+  		background-color: blue;
+      position: relative;
+      margin: 0 auto;
+  	}
+
+/*verticle white line*/
+  	.div1 {
+  		background-color: white;
+  		width: 20px;
+  		height: 220px;
+  		position: absolute;
+  		top: 0px;
+  		left: 100px;
+  		z-index: 1;
+  	}
+
+/*horizontal white line*/
+  	.div2 {
+  		background-color: white;
+  		width: 220px;
+  		height: 20px;
+  		position: absolute;
+  		top: 100px;
+  		left: 0;
+  		z-index: 1;
+  	}
+
+/*circle*/
+    .div3 {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      left: 95px;
+      top: 95px;
+      position: absolute;
+      z-index: 2;
+    }
+
+/*star*/
+    .div4 {
+    	position: absolute;
+      display: block;
+      color: black;
+      width: 0px;
+      height: 0px;
+      border-right: 8px solid transparent;
+      border-bottom: 5.6px solid black;
+      border-left: 8px solid transparent;
+      transform: rotate(70deg);
+      top: 107.2px;
+      left: 102px;
+      z-index: 3;
+    }
+
+    .div4:before {
+    	border-bottom: 8px solid black;
+		  border-left: 3px solid transparent;
+    	border-right: 3px solid transparent;
+    	position: absolute;
+    	height: 0;
+    	width: 0;
+    	top: -4.5px;
+    	left: -5.5px;
+    	display: block;
+    	content: '';
+    	transform: rotate(-35deg);
+    	z-index: 3;
+    }
+
+    .div4:after {
+    	position: absolute;
+    	display: block;
+    	color: black;
+    	top: 0.03px;
+    	left: -8px;
+    	width: 0px;
+    	height: 0px;
+    	border-right: 8px solid transparent;
+    	border-bottom: 5.6px solid black;
+    	border-left: 8px solid transparent;
+    	transform: rotate(-70deg);
+    	content: '';
+    	z-index: 3;
+    }
+
+/*red diamond*/
+    .div5 {
+		  background-color: red;
+   		transform: rotate(45deg);
+   		top: 60px;
+   		left: 60px;
+  		position: absolute;
+  		height: 100px;
+  		width: 100px;
+  		z-index: 1;
+    }
 
   </style>
 </head>

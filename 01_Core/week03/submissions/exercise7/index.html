@@ -9,7 +9,177 @@
   <meta name="author" content="Mark Kroh">
 
   <style>
-	
+		
+		.container {
+       		height: 290px;
+       		width: 170px;
+       		background-color: white;
+       		display: grid;
+       		grid-gap: 10px;
+       		grid-template-columns: 50px 50px 50px;
+       		grid-template-rows: 50px 50px 50px 50px 50px;
+       		padding: 10px;
+       		position: relative;
+       		margin: 0 auto;
+       	}
+       	
+		.div1::before{
+  			content: "";
+  			position: absolute;
+   			background: red;
+   			opacity: 0.5;
+   			width: 50px;
+   			height: 50px;
+    		top: 0;
+    		right: 120px;
+		}
+
+		.div1::after{
+ 		   	content: "";
+ 		   	position: absolute;
+   			opacity: 0.8;
+ 		   	background: red;
+ 		   	width: 50px;
+ 		   	height: 50px;
+  			top: 0;
+ 		   	right: 60px;
+		}
+  
+       	.div1{
+    		width: 50px;
+    		height: 50px;
+    		position: absolute;
+    		background-color: red;
+    		grid-column: 3 / 4;
+    		grid-row: 1 / 2;
+		}
+
+		.div2::before{
+  			content: "";
+  			position: absolute;
+   			background: orange;
+   			opacity: 0.5;
+   			width: 50px;
+   			height: 50px;
+    		top: 0;
+    		right: 120px;
+		}
+
+		.div2::after{
+ 		   	content: "";
+ 		   	position: absolute;
+ 		   	background: orange;
+ 		   	opacity: 0.8;
+ 		   	width: 50px;
+ 		   	height: 50px;
+  			top: 0;
+ 		   	right: 60px;
+		}
+		
+    .div2 {
+       	background-color: orange;
+    		grid-column: 3 / 4;
+       	grid-row: 2 / 3;
+    		position: absolute;
+    		width: 50px;
+    		height: 50px;
+    }
+
+    .div3::before{
+  			content: "";
+  			position: absolute;
+   			background: yellow;
+   			opacity: 0.5;
+   			width: 50px;
+   			height: 50px;
+    		top: 0;
+    		right: 120px;
+		}
+
+		.div3::after{
+ 		   	content: "";
+ 		   	position: absolute;
+ 		   	background: yellow;
+ 		   	opacity: 0.8;
+ 		   	width: 50px;
+ 		   	height: 50px;
+  			top: 0;
+ 		   	right: 60px;
+		}
+
+    .div3 {
+       	background-color: yellow;
+    		grid-column: 3 / 4;
+       	grid-row: 3 / 4;
+    		position: absolute;
+    		width: 50px;
+    		height: 50px;
+    }
+
+    .div4::before{
+  			content: "";
+  			position: absolute;
+   			background: blue;
+   			opacity: 0.5;
+   			width: 50px;
+   			height: 50px;
+    		top: 0;
+    		right: 120px;
+		}
+
+		.div4::after{
+ 		   	content: "";
+ 		   	position: absolute;
+ 		   	background: blue;
+ 		   	opacity: 0.8;
+ 		   	width: 50px;
+ 		   	height: 50px;
+  			top: 0;
+ 		   	right: 60px;
+		}
+
+    .div4 {
+       	background-color: blue;
+       	opacity: 0.8;
+    		grid-column: 3 / 4;
+       	grid-row: 4 / 5;
+       	position: absolute;
+    		width: 50px;
+    		height: 50px;
+    }
+
+		.div5::before{
+  			content: "";
+  			position: absolute;
+   			background: #DA70D6;
+   			opacity: 0.5;
+   			width: 50px;
+   			height: 50px;
+    		top: 0;
+    		right: 120px;
+		}
+
+		.div5::after{
+ 		   	content: "";
+ 		   	position: absolute;
+ 		   	background: #DA70D6;
+ 		   	opacity: 0.8;
+ 		   	width: 50px;
+ 		   	height: 50px;
+  			top: 0;
+ 		   	right: 60px;
+		}
+		
+    .div5 {
+       	background-color: #DA70D6;
+       	opacity: 0.8;
+    		grid-column: 3 / 4;
+       	grid-row: 5 / 6;
+       	position: absolute;
+    		width: 50px;
+    		height: 50px;
+    }
+
   </style>
 </head>
 <body>

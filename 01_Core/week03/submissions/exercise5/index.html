@@ -10,8 +10,56 @@
 
   <style>
 
-		  
-		}
+    .container {
+      	width: 320px;
+      	height: 160px;
+      	background-color: white;
+      	display: grid;
+      	grid-gap: 10px;
+      	grid-template-columns: 100px 100px 100px;
+      	grid-template-rows: 100px 50px;
+      	padding: 10px;
+      	position: relative;
+      	margin: 0 auto;
+    }
+
+    .div1 {
+      	grid-column-start: 1;
+      	grid-column-end: 2;
+      	background-color: red;
+    }
+
+    .div2 {
+      	grid-column-start: 2;
+      	grid-column-end: 3;
+      	background-color: orange;
+    }
+
+    .div3 {
+      	grid-column-start: 3;
+      	grid-column-end: 4;
+      	background-color: yellow;
+    }
+
+    .div4, .div5 {
+      	position: absolute;
+      	height: 100px;
+      	width: 100px;
+    	border: 5px white solid;
+    	border-bottom: 10px white solid;
+    }
+
+    .div4 {
+    	background-color: blue;
+    	top: 36%;
+    	left: 16%;
+    }
+
+	.div5 {
+    	background-color: #DA70D6;
+    	top: 36%;
+    	right: 16%;
+    }
   	
   </style>
 </head>

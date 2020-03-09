@@ -1,0 +1,23 @@
+#main-content {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+#main-content p {
+    line-height: 1.25;
+    margin: 0 20px 20px;
+}
+
+#vision {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 20px;
+    font-style: italic;
+    margin-bottom: 0;
+}

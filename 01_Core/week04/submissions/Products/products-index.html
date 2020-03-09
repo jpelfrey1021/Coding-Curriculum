@@ -1,0 +1,210 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Treats</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link href="products-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="dog-banner"></div>
+            <h1><a href="../index.html">Treat Paradise</a></h1>
+            <div id="cat-banner"></div>
+            <a href="../Search/search-index.html" id="search">
+                <img src="../images/search.png" id="search__img" alt="magnifying glass">
+                <p>Search</p>
+            </a>
+            <a href="" id="cart">
+                <img src="../images/cart.png" id="cart__img" alt="shopping cart">
+                <p>Cart</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li id="nav__about-us"><a href="../about-us/about-index.html">About Us</a></li>
+                <li>|</li>
+                <li id="nav__treats"><a href="../Products/products-index.html">Our Treats</a></li>
+                <li>|</li>
+                <li id="nav__contact"><a href="../contact-us/contact-index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content" class="clearfix">
+           <aside id="filter">
+                <h2>Filter</h2>
+                <hr>
+                <h3>Animal</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="checkbox__dog">
+                        <label for="checkbox__dog">Dog</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__cat">
+                        <label for="checkbox__cat">Cat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__bird">
+                        <label for="checkbox__bird">Bird</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__horse">
+                        <label for="checkbox__horse">Horse</label>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h3>Price</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="checkbox__5">
+                        <label for="checkbox__5">Less than $5</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__5-10">
+                        <label for="checkbox__5-10">Between $5 and $10</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__10">
+                        <label for="checkbox__10">Greater than $10</label>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h3>Brand</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="checkbox__bb">
+                        <label for="checkbox__bb">Blue Buffalo</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__kt">
+                        <label for="checkbox__kt">Kaytee</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox__mb">
+                        <label for="checkbox__mb">Milk-Bone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  id="checkbox__pr">
+                        <label for="checkbox__pr">Purina</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  id="checkbox__sp">
+                        <label for="checkbox__sp">Spillers</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  id="checkbox__tp">
+                        <label for="checkbox__tp">Temptations</label>
+                    </li>
+                </ul>
+           </aside>
+
+
+
+           <div id="display">
+                <div id="display__bar">
+					<select id="search__sort" name="sort">
+                        <option value=0>Sort By:</option>
+  						<option value=1>Best Sellers</option>
+  						<option value=2>Price: Low to High</option>
+  						<option value=3>Price: High to Low</option>
+					</select>
+                </div><!--end display bar-->
+
+                <div id="products">
+                    <div id="products__milkbone" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/large_milkbone.png" alt="Milkbone dog biscuits">
+                            <p><strong>Milk-bone</strong> Dog biscuits for Dogs of All Sizes</p>
+                            <p class="price">4.99</p>
+                        </a>
+                    </div>
+
+                    <div id="products__bb_dog" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/bb_dog.png" alt="blue buffalo wilderness dog biscuits">
+                            <p><strong>Blue Buffalo</strong> Wilderness Rocky Mountain Bison Biscuits</p>
+                            <p class="price">5.97</p>
+                        </a>
+                    </div>  
+
+                    <div id="products__temptations" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/temp_tuna.png" alt="temptations cat treats">
+                            <p><strong>Temptations</strong> Classic Tempting Tuna Cat Treats</p>
+                            <p class="price">3.79</p>
+                        </a>
+                    </div>  
+
+                    <div id="products__bb_cat" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/bb_cat.png" alt="blue buffalo kitty cravings cat treats">
+                            <p><strong>Blue Buffalo</strong> Kitty Cravings Crunchy Cat Treats</p>
+                            <p class="price">2.99</p>
+                        </a>
+                    </div>  
+
+                    <div id="products__kaytee__stick" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/kaytee_sticks.png" alt="kaytee cockatiel treat stick">
+                            <p><strong>Kaytee</strong> Cockatiel Honey Treat Stick 2-pack</p>
+                            <p class="price">6.57</p>
+                        </a>
+                    </div>
+
+                    <div id="products__kaytee__yogurt" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/kaytee_yogurt.png" alt="kaytee bird yogurt chips">
+                            <p><strong>Kaytee</strong> Fiesta Yogurt Chips for Birds</p>
+                            <p class="price">8.99</p>
+                        </a>
+                    </div>
+
+                    <div id="products__spillers" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/spillers.png" alt="spillers meadow herbnhorse treats">
+                            <p><strong>Spillers</strong> Meadow Herb All Natural Horse Treats</p>
+                            <p class="price">12.99</p>
+                        </a>
+                    </div>
+
+                    <div id="products__purina" class="product">
+                        <a href="../Milkbone-Product-Detail/milkbone-index.html">
+                            <img class="product__image" src="../Images/Purina.png" alt="purina carb conscious horse treats">
+                            <p><strong>Purina</strong> Carb Conscious Horse Treats</p>
+                            <p class="price">11.97</p>
+                        </a>
+                    </div>
+                </div> <!--end products-->
+           </div><!--end display-->
+
+
+        </div> <!--end main-content-->
+
+        <footer>
+            <div id="social-media">
+
+                <p>Connect With Us</p>
+            
+                <a href=""><img src="../images/facebook_logo.png" alt="facebook logo"></a>
+                <a href=""><img src="../images/insta_logo.jpg" alt="instagram logo"></a>
+                <a href=""><img src="../images/twitter_logo.png" alt="twitter logo"></a>
+                <a href=""><img src="../images/youtube-logo.png" alt="youtube logo"></a>
+            </div>
+
+            <p id="vertical-line">|</p>
+
+            <div id="copy">
+                <p>&copy;2020 Treat Paradise, Inc.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+    </div> <!--end container-->
+
+</body>

@@ -1,0 +1,167 @@
+#main-content {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    padding: 5px 0;
+}
+
+/*filter bar*/
+#filter {
+    float: left;
+    width: 100px;
+    padding: 5px 10px 10px;
+}
+
+#filter h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+#filter h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    margin: 5px 5px 10px 0;
+}
+
+#filter ul {
+    margin: 5px 0;
+}
+
+#filter li {
+    font-size: 0.75rem;
+    margin: 5px 0;
+    list-style: none;
+}
+
+#filter hr {
+    border-color: #ffad33;
+    border-style: dashed;
+    margin: 10px 0;
+}
+
+#filter input {
+    height: 15px;
+    width: 15px;
+}
+
+#filter input:checked + label {
+    font-weight: bold;
+}
+/*end filter*/
+
+
+#display {
+    float: right;
+    width: 68%;
+}
+
+
+/*search bar*/
+#display__bar {
+    height: 10%;
+}
+
+#search__sort {
+    font-size: 0.75rem;
+    border: #ffad33 solid 2px;
+    margin: 5px 0;
+    width: 75px;
+}
+/*end search bar*/
+
+
+
+/*products*/
+#products {
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product {
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.product__image {
+    height: 60%;
+    margin: 0 auto;
+}
+
+.product a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#products p {
+    font-size: 0.7rem;
+    margin: 0 5px;
+    width: 90px;
+
+}
+
+.price {
+    position: absolute;
+    bottom: 2%;
+    font-weight: bold;
+}
+/*end products*/
+
+
+footer {
+    clear: both;
+}
+
+
+
+@media (min-width: 800px) {
+    #filter {
+        width: 15%;
+    }
+
+    #display {
+        width: 82%;
+    }
+
+    /*products*/
+    .product {
+        height: 300px;
+    }
+    
+    .product__image {
+        height: 75%;
+    }
+    
+    #products p {
+        font-size: 0.8rem; 
+        width: 150px;  
+    }
+
+    /*search*/
+    #display__bar {
+        height: 10%;
+        position: relative;
+    }
+    
+    #search__bar {
+        width: 65%;
+    }
+    
+    #search__submit-btn {
+        width: 10%;
+    }
+    
+    #search__sort {
+        margin: 0 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+    }
+}

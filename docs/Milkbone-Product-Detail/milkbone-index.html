@@ -1,0 +1,129 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Milkbone Product Detail</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link href="milkbone-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="dog-banner"></div>
+            <h1><a href="../index.html">Treat Paradise</a></h1>
+            <div id="cat-banner"></div>
+            <a href="../Search/search-index.html" id="search">
+                <img src="../images/search.png" id="search__img" alt="magnifying glass">
+                <p>Search</p>
+            </a>
+            <a href="" id="cart">
+                <img src="../images/cart.png" id="cart__img" alt="shopping cart">
+                <p>Cart</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li id="nav__about-us"><a href="../about-us/about-index.html">About Us</a></li>
+                <li>|</li>
+                <li id="nav__treats"><a href="../Products/products-index.html">Our Treats</a></li>
+                <li>|</li>
+                <li id="nav__contact"><a href="../contact-us/contact-index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+            <div id="images">
+                <img class="images__shown" id="images__large" src="../Images/large_milkbone.png" alt="milkbone large treats">
+                <img class="images__shown" src="../Images/milkbone_medium.png" alt="milkbone medium treats">
+                <img class="images__shown" src="../Images/milkbone_small.png" alt="milkbone small treats">
+              
+                <div class="slider">
+                    <div>
+                        <img class="slider__item" id="slider1" src="../Images/large_milkbone.png" alt="milkbone large treats" onclick="currentDiv(1)">
+                    </div>
+                    <div>
+                        <img class="slider__item" id="slider2" src="../Images/milkbone_medium.png" alt="milkbone medium treats" onclick="currentDiv(2)">
+                    </div>
+                    <div>
+                        <img class="slider__item" id="slider3" src="../Images/milkbone_small.png" alt="milkbone small treats" onclick="currentDiv(3)">
+                    </div>
+                </div><!--end slider-->
+            </div><!--end images-->
+
+            <div id="overview">
+                <h2>Milk-Bone Dog Biscuits</h2>
+                <h3>By Milk-Bone</h3>
+                <p>size 24oz</p>
+                <select id="size" name="size">
+                    <option value=0>Treat Size:</option>
+                      <option value=1>Small</option>
+                      <option value=2>Medium</option>
+                      <option value=3>Large</option>
+                </select>
+                <p id="price">$4.99</p>
+
+                <label for="quantity">Quantity:</label>
+                <input type="text"  id="quantity" value="1">
+                
+                <input type="submit" value="Add to Cart" id="add-to-cart" onclick="addToCart()">
+            </div><!--end overview-->
+            
+            <div id=description>
+                <h4>Description</h4>
+                    <p>Your dog can enjoy all the benefits and scrumptious flavor of Milk-Bone 
+                        traditional biscuits in a size that's perfectly proportioned just for him/her. 
+                        With the great taste and crunchy texture, it's no wonder dogs simply can't 
+                        resist the satisfying crunch of Milk-Bone traditional biscuits. And, you will 
+                        enjoy how the 12 added vitamins and minerals keep your dog healthy and happy. 
+                        Plus, they have a crunchy texture that helps clean your dog's teeth while 
+                        he/she chews. Treat your dog to the great taste that will make him/her even 
+                        more excited at snack time.</p>
+            </div><!--end description-->
+            <hr id="hr1">
+            <div id="description-list">
+                <h4>Additional Details</h4>
+                    <ul>
+                        <li><strong>Food Type:</strong> Dod Treat</li>
+                        <li><strong>Food Consistency:</strong> Biscuit</li>
+                        <li><strong>Life Stage:</strong> Adult</li>
+                        <li><strong>Flavor:</strong> Other</li>
+                        <li><strong>Calories Per Serving:</strong> 20 calories per treat</li>
+                    </ul>
+            </div>
+            <hr id="hr2">
+            <div id="ingredients">
+                <h4>Ingredients</h4>
+                    <p>Wheat Flour, Wheat Bran, Beef Meal and Beef Bone Meal, Milk, Wheat Germ, Beef 
+                        Fat Preserved With Tocopherols, Salt, Dicalcium Phosphate, Natural Flavor, 
+                        Calcium Carbonate, Brewers Dried Yeast, Malted Barley Flour, Vitamins 
+                        (Choline Chloride, Dl-Alpha Tocopheryl Acetate {Vitamin E}, Vitamin A 
+                        Acetate, Calcium Pantothenate, Riboflavin, Vitamin B12 Supplement, D-Activated 
+                        Animal Sterol {Source Of Vitamin D3}), Sodium Metabisulfite (Dough Conditioner), 
+                        Minerals (Zinc Sulfate, Copper Sulfate, Ethylenediamine Dihydriodide [Source of 
+                        Iodine]).</p>
+            </div><!--end ingredients-->
+           
+        </div> <!--end main-content-->
+
+        <footer>
+            <div id="social-media">
+
+                <p>Connect With Us</p>
+            
+                <a href=""><img src="../images/facebook_logo.png" alt="facebook logo"></a>
+                <a href=""><img src="../images/insta_logo.jpg" alt="instagram logo"></a>
+                <a href=""><img src="../images/twitter_logo.png" alt="twitter logo"></a>
+                <a href=""><img src="../images/youtube-logo.png" alt="youtube logo"></a>
+            </div>
+
+            <p id="vertical-line">|</p>
+
+            <div id="copy">
+                <p>&copy;2020 Treat Paradise, Inc.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+    </div> <!--end container-->
+    <script src="milkbone-script.js"></script>
+</body>

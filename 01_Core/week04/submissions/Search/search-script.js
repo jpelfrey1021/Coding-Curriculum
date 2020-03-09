@@ -1,3 +1,3 @@
 function returnSearch() {
-    window.location.href = "../products/products-index.html"
+    window.location.href = "../Products/products-index.html"
 }

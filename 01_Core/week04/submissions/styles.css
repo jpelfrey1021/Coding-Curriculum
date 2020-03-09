@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-    background: white url("images/paw_background.png");
+    background: white url("Images/paw_background.png");
 }
 
 h2 {
@@ -50,7 +50,7 @@ header {
 }
 
 #cat-banner{
-    background: url("images/cat_banner.png") repeat-x;
+    background: url("Images/cat_banner.png") repeat-x;
     height: 60px;
 }
 
@@ -120,15 +120,15 @@ header {
 }
 
 #buffalo {
-    background: url(images/pink_bgrd.png);
+    background: url(Images/pink_bgrd.png);
 }
 
 #dog-rank {
-    background: url(images/green_bgrd.png);
+    background: url(Images/green_bgrd.png);
 }
 
 #horse-treat {
-    background: url(images/blue_brgd.png);
+    background: url(Images/blue_brgd.png);
 }
 
 

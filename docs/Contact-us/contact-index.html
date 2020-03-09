@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Contact us</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link href="contact-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="dog-banner"></div>
+            <h1><a href="../index.html">Treat Paradise</a></h1>
+            <div id="cat-banner"></div>
+            <a href="../Search/search-index.html" id="search">
+                <img src="../images/search.png" id="search__img" alt="magnifying glass">
+                <p>Search</p>
+            </a>
+            <a href="" id="cart">
+                <img src="../images/cart.png" id="cart__img" alt="shopping cart">
+                <p>Cart</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li id="nav__about-us"><a href="../about-us/about-index.html">About Us</a></li>
+                <li>|</li>
+                <li id="nav__treats"><a href="../products/products-index.html">Our Treats</a></li>
+                <li>|</li>
+                <li id="nav__contact"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+            <h2>Contact Us</h2>
+            <p>Fill out the form below and our customer service department will get back to you shortly.</p>
+
+            <form id="contact-form" method="post">
+                <fieldset id=form-fieldset>
+
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="text-input">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="text-input">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" class="text-input">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="text-input">
+
+                    <label for="contact-method" class="contact-method" id="method-label">Prefered Contact Method:</label><br>
+                    <input type="radio" class="contact-method contact-radio" id="phone-num" name="contact-method">
+                    <label for="phone-num" class="contact-method">Phone</label>
+                    <input type="radio" class="contact-method contact-radio" id="email-add" name="contact-method">
+                    <label for="email-add" class="contact-method">Email</label>
+                    
+                    <label for="marketing-method" class="marketing-method" id="marketing-label">How did you hear about us?</label>
+                        <div class="TV marketing-method">
+                            <input type="checkbox" id="TV" class="marketing-radio">
+                            <label for="TV">TV</label>
+                        </div>
+
+                        <div class="social-media-ad, marketing-method">
+                            <input type="checkbox" id="social-media-ad" class="marketing-radio">
+                            <label for="social-media-ad">Social Media</label>
+                        </div>
+
+                        <div class="radio, marketing-method">
+                            <input type="checkbox" id="Radio" class="marketing-radio">
+                            <label for="Radio">Radio</label>
+                        </div>
+                        
+                        <div class="word-of-mouth marketing-method">
+                            <input type="checkbox" id="word-of-mouth" class="marketing-radio">
+                            <label for="word-of-mouth">Word of Mouth</label>
+                        </div>
+                        
+                        <div class="other marketing-method">
+                            <input type="checkbox" id="other" class="marketing-radio">
+                            <label for="other">Other</label>
+                        </div>
+                        
+
+                    <label for="customer-message" id="message-label">Message:</label>
+                    <textarea id="customer-message" name="customer-message" required></textarea>
+
+                    <input type="submit" value="Submit" id="submit-btn" onclick="contactUs()">
+              </fieldset>
+            </form>
+
+        </div> <!--end main-content-->
+
+        <footer>
+            <div id="social-media">
+
+                <p>Connect With Us</p>
+            
+                <a href=""><img src="../images/facebook_logo.png" alt="facebook logo"></a>
+                <a href=""><img src="../images/insta_logo.jpg" alt="instagram logo"></a>
+                <a href=""><img src="../images/twitter_logo.png" alt="twitter logo"></a>
+                <a href=""><img src="../images/youtube-logo.png" alt="youtube logo"></a>
+            </div>
+
+            <p id="vertical-line">|</p>
+
+            <div id="copy">
+                <p>&copy;2020 Treat Paradise, Inc.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+    </div> <!--end container-->
+
+    <script src="contact-script.js"></script>
+</body>

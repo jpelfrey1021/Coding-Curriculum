@@ -11,15 +11,15 @@ You will be building an e-commerce site in four phases. We will build the front-
 
 ## The website must have the following pages:
 
-**Home page:** Have a featured products area that will show several products marked as featured in the database (hard-coded this for now). There should also be a banner image slideshow. The rest of the home page content is up to you.
+    **Home page:** Have a featured products area that will show several products marked as featured in the database (hard-coded this for now). There should also be a banner image slideshow. The rest of the home page content is up to you.
 
-**Products page:** This page should be a visual list of all the products on your site. Each product should show an image, the price and a quick description. The user should be able to click on the product and go to a product detail page (only one example of this page is needed. Use the link to this page for all products). The user should also be able to choose to only display products from a particular category. This will obviously just be a mockup for now and now functionality is expected.
+    **Products page:** This page should be a visual list of all the products on your site. Each product should show an image, the price and a quick description. The user should be able to click on the product and go to a product detail page (only one example of this page is needed. Use the link to this page for all products). The user should also be able to choose to only display products from a particular category. This will obviously just be a mockup for now and now functionality is expected.
 
-**Product Detail page:** Must show a minimum of one image of the product. Multiple images are encouraged. Price & description must be shown. User should be able to access a form that lets them select the number they wish to purchase. If the product requires other selections (like size or color), they should be able to do that, too. The form should have an add to cart button.This will obviously just be a mockup for now and now functionality is expected.
+    **Product Detail page:** Must show a minimum of one image of the product. Multiple images are encouraged. Price & description must be shown. User should be able to access a form that lets them select the number they wish to purchase. If the product requires other selections (like size or color), they should be able to do that, too. The form should have an add to cart button.This will obviously just be a mockup for now and now functionality is expected.
 
-**Search page:** This page should allow the user to type in a search term and it should return a list of products. The search term should search the category, the name and the description. The search page should also let you filter by price. This will obviously just be a mockup for now and now functionality is expected.
+    **Search page:** This page should allow the user to type in a search term and it should return a list of products. The search term should search the category, the name and the description. The search page should also let you filter by price. This will obviously just be a mockup for now and now functionality is expected.
 
-**Contact page:** Standard contact form asking for name, email, phone, preferred contact method (radio button, phone/email), How did you hear about us? (checkboxes: conference, TV, Radio, Word of Mouth, other) and comments.
+    **Contact page:** Standard contact form asking for name, email, phone, preferred contact method (radio button, phone/email), How did you hear about us? (checkboxes: conference, TV, Radio, Word of Mouth, other) and comments.
 
 ## Visual requirements:
 
@@ -29,7 +29,7 @@ The site should use media queries to do 2 different layouts. One for less than 8
 ## JavaScript:
 
 - Implement a form validation for the contact form 
-- Implement a slider for the home page.
+    -Implement a slider for the home page.
 
 ## The project will be assessed on the following criteria:
 

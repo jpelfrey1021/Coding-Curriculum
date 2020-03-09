@@ -1,0 +1,180 @@
+
+#main-content {
+    background-color: #f2f2f2;
+    padding-bottom: 2px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h2 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+#main-content p {
+    margin: 15px;
+    font-size: 2.5rem;
+}
+
+#form-fieldset {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-width: 12px;
+    border-color: black;
+    font-size: 2.5rem;
+}
+
+
+/*text inputs*/
+#first-name {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#last-name {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#phone {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#email {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+.text-input:focus {
+    border: #ffad33;
+}
+
+
+/*contact method*/
+.contact-method {
+    margin-right: 10px;
+}
+
+.contact-radio {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.contact-radio:focus {
+    background-color: #ffad33;
+}
+
+.method-label {
+    display: block;
+}
+
+/*marketing method*/
+.marketing-method {
+    display: block;
+}
+
+#marketing-label {
+    margin-top: 35px;
+}
+
+#message-label {
+    margin-top: 25px;
+    display: block;
+}
+
+.marketing-radio {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/*message*/
+#customer-message {
+    display: block;
+    height: 160px;
+    width: 97%;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+#customer-message:focus {
+    border: #ffad33;
+}
+
+/*submit button*/
+#submit-btn {
+    margin-top: 15px 0;
+    width: 160px;
+    height: 60px;
+    font-size: 2.5rem;
+    background-color: #ffad33;
+    border-radius: 15%;
+}
+
+
+
+@media (min-width: 800px) {
+    
+    h2 {
+        margin: 10px;
+        padding: 10px;
+        font-size: 2rem;
+    }
+    
+    #main-content p {
+        font-size: 1.5rem;
+    }
+    
+    #form-fieldset {
+        font-size: 1.5rem;
+    }
+    
+    /*text inputs*/
+    #first-name {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #last-name {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #phone {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #email {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    /*submit button*/
+    #submit-btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}

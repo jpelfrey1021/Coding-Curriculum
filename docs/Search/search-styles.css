@@ -1,0 +1,63 @@
+#main-content {
+    position: relative;
+    height: 450px;
+}
+
+h2 {
+    margin: 20px auto;
+    z-index: 2;
+}
+#image {
+    background: url(../Images/search.png) no-repeat;
+    opacity: 0.1;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+#search-group {
+    position: relative;
+}
+
+#search-bar {
+    border: #ffad33;
+    font-size: 2rem;
+    height: 40px;
+    width: 70%;
+    color: black;
+    margin: 130px auto 10px;
+    z-index: 2;
+    display: block;
+}
+
+#submit-btn {
+    font-size: 2rem;
+    width: 120px;
+    height: 40px;
+    border: #ffad33 solid 2px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+input[type=text] {
+    background-color: #ffad33
+}
+
+
+
+

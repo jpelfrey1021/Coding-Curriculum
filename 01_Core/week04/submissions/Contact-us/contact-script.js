@@ -4,7 +4,7 @@ function contactUs() {
     var message = document.forms["contact-form"]["customer-message"].value;
 
     if (message == "" || email == "" || phone == "") {
-        alert("Erro: input field is empty")
+        alert("Error: input field is empty")
     } else {
         alert("Form submitted successfully");
     }

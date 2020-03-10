@@ -1,0 +1,981 @@
+
+/*************************************
+General
+**************************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+#container {
+    background: white url("../images/paw_background.png");
+}
+
+.clearfix:after { 
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+/*header*/
+h1 {
+    font-size: 10vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+#tagline {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    background: white;
+    position: relative
+}
+
+#cat-banner{
+    background: url("../images/cat_banner.png") repeat-x;
+    height: 60px;
+}
+
+#search, #cart {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 5%;
+}
+
+#search {
+    left: 2%;
+}
+
+#cart {
+    right: 2%;
+}
+
+#search__img, #cart__img {
+    height: 20px;
+    width: 20px;
+}
+
+#search:hover, #cart:hover{
+    text-decoration: underline;
+}
+
+#search p, #cart p {
+    font-size: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+/*navigation bar*/
+.nav-bar {
+    background-color: #ffad33;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.nav-bar li {
+    list-style: none;
+    text-align: center;
+    font-weight: bolder;
+  	font-size: 1rem;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*image banner*/
+
+.image-banner {
+    margin: 30px 0;
+}
+.mySlides {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#buffalo {
+    background: url(../images/pink_bgrd.png);
+}
+
+#dog-rank {
+    background: url(../images/green_bgrd.png);
+}
+
+#horse-treat {
+    background: url(../images/blue_brgd.png);
+}
+
+
+/*main div*/
+#main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*shop by pet*/
+
+#categories{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    row-gap: 15px;
+    margin: 30px auto;
+    background: #f2f2f2;
+    max-width: 1200px;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    height: 450px;
+}
+.category-head {
+    height: 150px;
+    border-radius: 50%;
+    border: black 1px solid;
+    background-color: white;
+}
+
+#categories p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+#categories h2 {
+    display: block;
+    align-content: center;
+    grid-row: 1/2;
+    grid-column: 1/5;
+
+}
+
+#category__dog {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#category__cat {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#category__fish {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#category__horse {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+
+/*featured products*/
+
+#featured {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+#featured__all{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.featured__product {
+    width: 33%;
+    height: 200px;
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+.featured__product a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.featured__product a:hover{
+    text-decoration: underline;
+}
+
+.featured__image {
+    height: 80%;
+    padding-top: 5%;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #ffad33;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+#social-media {
+    font-size: 1em;
+}
+
+#social-media img {
+    height: 25px;
+    width: 25px;
+    margin: 5px 5px 0;
+}
+
+#vertical-line {
+    display: none;
+}
+
+#copy {
+    font-size: 0.75rem;
+    padding: 5px 0 0;
+}
+
+
+/*************************
+Products Page
+**************************/
+
+.products-main {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    padding: 5px 0;
+}
+
+/*filter bar*/
+#filter {
+    float: left;
+    width: 100px;
+    padding: 5px 10px 10px;
+}
+
+#filter h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+#filter h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    margin: 5px 5px 10px 0;
+}
+
+#filter ul {
+    margin: 5px 0;
+}
+
+#filter li {
+    font-size: 0.75rem;
+    margin: 5px 0;
+    list-style: none;
+}
+
+#filter hr {
+    border-color: #ffad33;
+    border-style: dashed;
+    margin: 10px 0;
+}
+
+#filter input {
+    height: 15px;
+    width: 15px;
+}
+
+#filter input:checked + label {
+    font-weight: bold;
+}
+/*end filter*/
+
+
+#display {
+    float: right;
+    width: 68%;
+}
+
+
+/*search bar*/
+#display__bar {
+    height: 10%;
+}
+
+#search__sort {
+    font-size: 0.75rem;
+    border: #ffad33 solid 2px;
+    margin: 5px 0;
+    width: 75px;
+}
+/*end search bar*/
+
+
+
+/*products*/
+#products {
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product {
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.product__image {
+    height: 60%;
+    margin: 0 auto;
+}
+
+.product a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#products p {
+    font-size: 0.7rem;
+    margin: 0 5px;
+    width: 90px;
+
+}
+
+.price {
+    position: absolute;
+    bottom: 2%;
+    font-weight: bold;
+}
+/*end products*/
+
+
+footer {
+    clear: both;
+}
+
+/***************************
+About Us
+**************************/
+
+.about-main {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+}
+
+.aboutus-title {
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+.about-main p {
+    line-height: 1.25;
+    margin: 0 20px 20px;
+}
+
+#vision {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 20px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/*************************
+Contact Page
+************************/
+.contact-main {
+    background-color: #f2f2f2;
+    padding-bottom: 2px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.contact-title {
+    margin: 10px;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.contact-main p {
+    margin: 15px;
+    font-size: 2.5rem;
+}
+
+#form-fieldset {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-width: 12px;
+    border-color: black;
+    font-size: 2.5rem;
+}
+
+
+/*text inputs*/
+#first-name {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#last-name {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#phone {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+#email {
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px 10px 20px;
+    font-size: 2rem;
+}
+
+.text-input:focus {
+    border: #ffad33;
+}
+
+
+/*contact method*/
+.contact-method {
+    margin-right: 10px;
+}
+
+.contact-radio {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.contact-radio:focus {
+    background-color: #ffad33;
+}
+
+.method-label {
+    display: block;
+}
+
+/*marketing method*/
+.marketing-method {
+    display: block;
+}
+
+#marketing-label {
+    margin-top: 35px;
+}
+
+#message-label {
+    margin-top: 25px;
+    display: block;
+}
+
+.marketing-radio {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/*message*/
+#customer-message {
+    display: block;
+    height: 160px;
+    width: 97%;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+#customer-message:focus {
+    border: #ffad33;
+}
+
+/*submit button*/
+#contact-submit-btn {
+    margin-top: 15px 0;
+    width: 160px;
+    height: 60px;
+    font-size: 2.5rem;
+    background-color: #ffad33;
+    border-radius: 15%;
+}
+
+
+
+/**************************
+Search Page
+*************************/
+.search-main {
+    position: relative;
+    height: 450px;
+}
+
+.search-title {
+    margin: 20px auto;
+    z-index: 2;
+}
+#image {
+    background: url(../Images/search.png) no-repeat;
+    opacity: 0.1;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+#search-group {
+    position: relative;
+}
+
+#search-bar {
+    border: #ffad33;
+    font-size: 2rem;
+    height: 40px;
+    width: 70%;
+    color: black;
+    margin: 130px auto 10px;
+    z-index: 2;
+    display: block;
+}
+
+#search-submit-btn {
+    font-size: 2rem;
+    width: 120px;
+    height: 40px;
+    border: #ffad33 solid 2px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+#search-submit-btn:hover {
+    cursor: pointer;
+}
+
+.search-main input[type=text]:focus {
+    outline: none;
+}
+
+.search-main input[type=text] {
+    background-color: #ffad33
+}
+
+
+/***************************
+Milkbone product page
+***************************/
+
+.productdetail-main {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+}
+
+/*images*/
+#images{
+    width: 30%;
+    margin: 20px 10px;
+    margin-right: 0;
+    float: left;
+}
+
+.images__shown {
+    width: 100%;
+    display: none;
+}
+
+#images__large {
+    display: block;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    column-gap: 3%;
+}
+
+.slider__item {
+    width:100%
+}
+
+#slider1 {
+    columns: 1/2;
+}
+
+#slider2 {
+    columns: 2/3;
+}
+
+#slider3 {
+    columns: 3/4;
+}
+
+.slider__item:hover {
+    cursor: pointer;
+}
+
+/*overview*/
+#overview {
+    float: right;
+    width: 60%;
+    margin: 20px 10px;
+    margin-left: 0;
+    line-height: 1.5;
+}
+
+#overview h2 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+#overview h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#overview p {
+    margin: 2.5px 0;
+    font-size: 1rem;
+}
+
+#size {
+    font-size: 1rem;
+    background-color: #ffad33;
+    margin-top: 20px;
+}
+
+#size:hover {
+    cursor: pointer;
+}
+
+#quantity {
+    height: 25px;
+    width: 25px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+}
+
+#add-to-cart {
+    font-size: 1rem;
+    background-color: #ffad33;
+    padding: 5px;
+    border: black solid 1px;
+    margin: 10px 0;
+}
+
+#add-to-cart:hover {
+    cursor: pointer;
+}
+
+/*description etc*/
+hr {
+    border:none;
+    border-top: #ffad33 3px dashed;
+    margin: 5px 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+#description {
+    clear: both;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+#description-list {
+    clear: both;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+#description-list ul {
+    margin: 15px 0;
+    list-style: none;
+}
+
+#ingredients {
+    margin: 20px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/**************************
+General Media Queries
+***************************/
+
+@media (min-width: 800px) {
+    /*header*/
+    h1 {
+        font-size: 4rem;
+    }
+    
+    #search__img, #cart__img {
+        height: 40px;
+        width: 40px;
+    }
+
+    /*footer*/
+    footer {
+        height: 55px;
+    }
+
+    #social-media {
+        float: left;
+        width: 47.5%;
+        font-size: 1.25rem;
+    }
+    
+    #vertical-line {
+        float: left;
+        width: 5%;
+        font-size: 45px;
+        display: block;
+    }
+    
+    #copy {
+        float: left;
+        width: 47.5%;
+        padding: 15px 0;
+    }
+
+    /******************
+    Home Page
+    *****************/
+
+     /*shop by pet*/
+     #categories{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 80%;
+        height: 250px;
+    }
+    
+    #category__fish {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    
+    #category__horse {
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    /*featured products*/
+    .featured__product {
+        height: 400px;
+    }
+
+    .featured__product a {
+        font-size: 1.75rem;
+    }
+
+    /*********************
+    Products Page
+    *********************/
+    #filter {
+        width: 15%;
+    }
+
+    #display {
+        width: 82%;
+    }
+
+    /*products*/
+    .product {
+        height: 300px;
+    }
+    
+    .product__image {
+        height: 75%;
+    }
+    
+    #products p {
+        font-size: 0.8rem; 
+        width: 150px;  
+    }
+
+    /*search*/
+    #display__bar {
+        height: 10%;
+        position: relative;
+    }
+    
+    #search__bar {
+        width: 65%;
+    }
+    
+    #search__submit-btn {
+        width: 10%;
+    }
+    
+    #search__sort {
+        margin: 0 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+    }
+
+    /*******************
+    Contact Page
+    ******************/
+    .contact-title {
+        margin: 10px;
+        padding: 10px;
+        font-size: 2rem;
+    }
+    
+    .contact-main p {
+        font-size: 1.5rem;
+    }
+    
+    #form-fieldset {
+        font-size: 1.5rem;
+    }
+    
+    /*text inputs*/
+    #first-name {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #last-name {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #phone {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    #email {
+        height: 30px;
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    /*submit button*/
+    #contact-submit-btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1.5rem;
+    }  
+
+    /******************
+    Milkbone media Query
+    ******************/
+    #description {
+        clear: right;
+        margin-left: 39%;
+    }
+
+    #description-list {
+        clear: both;
+    }
+
+    #hr1 {
+        display: none;
+    }
+}
+
+
+
+
+/*********************************
+Milkbone product page Media Query
+*********************************/
+@media (min-width: 1100px) {
+    #description {
+        clear: right;
+        margin-left: 39%;
+    }
+
+    #description-list {
+        clear: right;
+        margin-left: 39%;
+    }
+
+    #ingredients {
+        margin-top: 39px;
+        clear: both;
+    }
+
+    #hr1 {
+        clear: right;
+        margin-left: 39%;
+        display: block;
+    }
+
+    #hr2 {
+        display: none;
+    }
+}

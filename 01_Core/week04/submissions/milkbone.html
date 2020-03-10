@@ -2,50 +2,50 @@
 <head>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Milkbone Product Detail</title>
-    <link href="../styles.css" rel="stylesheet">
-    <link href="milkbone-styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/normalized.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="container">
+    <main id="container">
         <header>
-            <h1><a href="../index.html">Treat Paradise</a></h1>
+            <h1><a href="index.html">Treat Paradise</a></h1>
             <div id="cat-banner"></div>
-            <a href="../Search/search-index.html" id="search">
-                <img src="../Images/search.png" id="search__img" alt="magnifying glass">
+            <a href="search.html" id="search">
+                <img src="images/search.png" id="search__img" alt="magnifying glass">
                 <p>Search</p>
             </a>
             <a href="" id="cart">
-                <img src="../Images/cart.png" id="cart__img" alt="shopping cart">
+                <img src="images/cart.png" id="cart__img" alt="shopping cart">
                 <p>Cart</p>
             </a>
         </header>
 
         <nav>
             <ul class="nav-bar">
-                <li id="nav__about-us"><a href="../about-us/about-index.html">About Us</a></li>
+                <li id="nav__about-us"><a href="about.html">About Us</a></li>
                 <li>|</li>
-                <li id="nav__treats"><a href="../Products/products-index.html">Our Treats</a></li>
+                <li id="nav__treats"><a href="products.html">Our Treats</a></li>
                 <li>|</li>
-                <li id="nav__contact"><a href="../Contact-us/contact-index.html">Contact Us</a></li>
+                <li id="nav__contact"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
-        <div id="main-content">
+        <div id="main-content" class="productdetail-main">
             <div id="images">
-                <img class="images__shown" id="images__large" src="../Images/large_milkbone.png" alt="milkbone large treats">
-                <img class="images__shown" src="../Images/milkbone_medium.png" alt="milkbone medium treats">
-                <img class="images__shown" src="../Images/milkbone_small.png" alt="milkbone small treats">
+                <img class="images__shown" id="images__large" src="images/large_milkbone.png" alt="milkbone large treats">
+                <img class="images__shown" src="images/milkbone_medium.png" alt="milkbone medium treats">
+                <img class="images__shown" src="images/milkbone_small.png" alt="milkbone small treats">
               
                 <div class="slider">
                     <div>
-                        <img class="slider__item" id="slider1" src="../Images/large_milkbone.png" alt="milkbone large treats" onclick="currentDiv(1)">
+                        <img class="slider__item" id="slider1" src="images/large_milkbone.png" alt="milkbone large treats" onclick="currentDiv(1)">
                     </div>
                     <div>
-                        <img class="slider__item" id="slider2" src="../Images/milkbone_medium.png" alt="milkbone medium treats" onclick="currentDiv(2)">
+                        <img class="slider__item" id="slider2" src="images/milkbone_medium.png" alt="milkbone medium treats" onclick="currentDiv(2)">
                     </div>
                     <div>
-                        <img class="slider__item" id="slider3" src="../Images/milkbone_small.png" alt="milkbone small treats" onclick="currentDiv(3)">
+                        <img class="slider__item" id="slider3" src="images/milkbone_small.png" alt="milkbone small treats" onclick="currentDiv(3)">
                     </div>
                 </div><!--end slider-->
             </div><!--end images-->
@@ -110,10 +110,10 @@
 
                 <p>Connect With Us</p>
             
-                <a href=""><img src="../Images/facebook_logo.png" alt="facebook logo"></a>
-                <a href=""><img src="../Images/insta_logo.jpg" alt="instagram logo"></a>
-                <a href=""><img src="../Images/twitter_logo.png" alt="twitter logo"></a>
-                <a href=""><img src="../Images/youtube-logo.png" alt="youtube logo"></a>
+                <a href=""><img src="images/facebook_logo.png" alt="facebook logo"></a>
+                <a href=""><img src="images/insta_logo.jpg" alt="instagram logo"></a>
+                <a href=""><img src="images/twitter_logo.png" alt="twitter logo"></a>
+                <a href=""><img src="images/youtube-logo.png" alt="youtube logo"></a>
             </div>
 
             <p id="vertical-line">|</p>
@@ -123,6 +123,6 @@
                 <p>All rights reserved.</p>
             </div>
         </footer>
-    </div> <!--end container-->
-    <script src="milkbone-script.js"></script>
+    </main> <!--end container-->
+    <script src="js/milkbone-script.js"></script>
 </body>

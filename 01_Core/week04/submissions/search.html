@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>About Us</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/normalized.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <h1><a href="../index.html">Treat Paradise</a></h1>
+            <div id="cat-banner"></div>
+            <a href="search.html" id="search">
+                <img src="images/search.png" id="search__img" alt="magnifying glass">
+                <p>Search</p>
+            </a>
+            <a href="" id="cart">
+                <img src="images/cart.png" id="cart__img" alt="shopping cart">
+                <p>Cart</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul class="nav-bar">
+                <li id="nav__about-us"><a href="about.html">About Us</a></li>
+                <li>|</li>
+                <li id="nav__treats"><a href="products.html">Our Treats</a></li>
+                <li>|</li>
+                <li id="nav__contact"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content" class="clearfix search-main">
+           <h2 class="search-title">What are you looking for today?</h2>
+           <div id=search-group>
+                <input type="text" id="search-bar" placeholder="Search...">
+                <input type="button" value="Search" id="search-submit-btn" onclick="returnSearch()">
+           </div>
+           <div id="image"> </div>
+        </div> <!--end main-content-->
+
+        <footer>
+            <div id="social-media">
+
+                <p>Connect With Us</p>
+            
+                <a href=""><img src="images/facebook_logo.png" alt="facebook logo"></a>
+                <a href=""><img src="images/insta_logo.jpg" alt="instagram logo"></a>
+                <a href=""><img src="images/twitter_logo.png" alt="twitter logo"></a>
+                <a href=""><img src="images/youtube-logo.png" alt="youtube logo"></a>
+            </div>
+
+            <p id="vertical-line">|</p>
+
+            <div id="copy">
+                <p>&copy;2020 Treat Paradise, Inc.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="js/search-script.js"></script>
+    </main> <!--end container-->
+</body>

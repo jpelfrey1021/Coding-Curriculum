@@ -1,3 +1,3 @@
 function returnSearch() {
-    location.assign("codingcurriculum/01_core/week04/submissions/products.html");
+    window.location.href = 'https://jpelfrey1021.github.io/CodingCurriculum/01_Core/week04/submissions/products.html';
 }

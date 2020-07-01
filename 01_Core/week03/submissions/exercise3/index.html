@@ -9,107 +9,64 @@
   <meta name="author" content="Mark Kroh">
 
   <style>
-
-/*blue background*/
-    .container {
-  		height: 220px;
-  		width: 220px;
-  		background-color: blue;
-      position: relative;
-      margin: 0 auto;
-  	}
-
-/*verticle white line*/
-  	.div1 {
+.container {
+  		height: 240px;
+  		width: 240px;
   		background-color: white;
-  		width: 20px;
-  		height: 220px;
-  		position: absolute;
-  		top: 0px;
-  		left: 100px;
-  		z-index: 1;
+      	position: relative;
+      	margin: 0 auto;
   	}
 
-/*horizontal white line*/
-  	.div2 {
-  		background-color: white;
-  		width: 220px;
-  		height: 20px;
-  		position: absolute;
-  		top: 100px;
-  		left: 0;
-  		z-index: 1;
+  	.interior {
+   		height: 100px;
+  		width: 100px;
+      	margin: 10px;
+      	position: absolute;
   	}
 
-/*circle*/
-    .div3 {
-      width: 30px;
-      height: 30px;
-      background: white;
-      border-radius: 50%;
-      left: 95px;
-      top: 95px;
-      position: absolute;
-      z-index: 2;
+    .div1,.div2,.div3,.div4 {
+      	background-color: blue;
     }
 
-/*star*/
-    .div4 {
-    	position: absolute;
-      display: block;
-      color: black;
-      width: 0px;
-      height: 0px;
-      border-right: 8px solid transparent;
-      border-bottom: 5.6px solid black;
-      border-left: 8px solid transparent;
-      transform: rotate(70deg);
-      top: 107.2px;
-      left: 102px;
-      z-index: 3;
-    }
-
-    .div4:before {
-    	border-bottom: 8px solid black;
-		  border-left: 3px solid transparent;
-    	border-right: 3px solid transparent;
-    	position: absolute;
-    	height: 0;
-    	width: 0;
-    	top: -4.5px;
-    	left: -5.5px;
-    	display: block;
-    	content: '';
-    	transform: rotate(-35deg);
-    	z-index: 3;
-    }
-
-    .div4:after {
-    	position: absolute;
-    	display: block;
-    	color: black;
-    	top: 0.03px;
-    	left: -8px;
-    	width: 0px;
-    	height: 0px;
-    	border-right: 8px solid transparent;
-    	border-bottom: 5.6px solid black;
-    	border-left: 8px solid transparent;
-    	transform: rotate(-70deg);
-    	content: '';
-    	z-index: 3;
-    }
-
-/*red diamond*/
     .div5 {
-		  background-color: red;
+      	background-color: red;
+    }
+
+    .div1 {
+      	top: 0;
+      	left: 0;
+    }
+
+    .div2 {
+      	top: 0;
+      	right: 0;
+    }
+
+    .div3 {
+      	bottom: 0;
+      	left: 0;
+    }
+
+    .div4 {
+      	bottom: 0;
+      	right: 0;
+    }
+
+   .div5 {
    		transform: rotate(45deg);
    		top: 60px;
    		left: 60px;
-  		position: absolute;
-  		height: 100px;
-  		width: 100px;
-  		z-index: 1;
+   }
+    .div5::after {
+		width: 20px;
+    		height: 20px;
+    		content: #x2605;
+    		transform: rotate(-45deg);
+    		background: white;
+    		border-radius: 50%;
+    		text-align: center;
+}
+Collaps
     }
 
   </style>

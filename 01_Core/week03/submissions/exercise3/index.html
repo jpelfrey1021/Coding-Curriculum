@@ -9,20 +9,20 @@
 <meta name="author" content="Mark Kroh">
 
 <style>
-  .container {
+    .container {
         height: 240px;
-  	width: 240px;
-  	background-color: white;
+  		width: 240px;
+  		background-color: white;
       	position: relative;
       	margin: 0 auto;
-  }
+  	}
 
-  .interior {
-   	height: 100px;
-  	width: 100px;
+  	.interior {
+   		height: 100px;
+  		width: 100px;
       	margin: 10px;
       	position: absolute;
-  }
+  	}
 
     .div1,.div2,.div3,.div4 {
       	background-color: blue;
@@ -53,27 +53,29 @@
     }
 
    .div5 {
-   	transform: rotate(45deg);
+   		transform: rotate(45deg);
         top:  50%;
         margin-top: -50px;
-        left: 50%;
-        margin-left: -50px;
+           left: 50%;
+           margin-left: -50px;
    }
+   
     .div5::after {
-	width: 50px;
-        height: 50px;
-        content: "\2605";
-        text-align: center;
-        line-height: 50px;
-    	transform: rotate(-45deg);
+		width: 30px;
+        height: 30px;
+        content: "\2605"; /*star icon*/
+        font-size: 16px; /*increase icon size*/
+        text-align: center; /*align icon center*/
+        line-height: 30px; /*align icon in middle top to bottom. line height same as the div*/
+    	transform: rotate(-45deg); /*unrotate it based on the roteted red div*/
     	background: white;
-    	border-radius: 50%;
-        text-align: center;
-        position: fixed;
+        border-radius: 50%; /*make it a circle*/
+        /*position circle in the middle*/
+        position: absolute;
         left: 50%;
         top: 50%;
-        margin-left: -25px;
-        margin-top: -25px;
+        margin-left: -15px;
+        margin-top: -15px;
     }
 
 </style>
